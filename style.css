@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title-container h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.title-container .subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 4;
+}
+
+.content-box {
+    flex: 1;
+    background-color: lightgray;
+    padding: 30px;
+    border-radius: 4px;
+    min-height: 400px;
+}
+
+.content-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.content-box p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.4;
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-placeholder {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .socials a {
+    color: #4caf50; 
+    text-decoration: underline;
+}
+
+footer .socials a:hover {
+    color: #81c784;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .content-box {
+        min-height: auto;
+    }
+}
